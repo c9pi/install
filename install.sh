@@ -274,14 +274,14 @@ compile_tmux(){
   tar xzf libevent-2.0.21-stable.tar.gz
   rm libevent-2.0.21-stable.tar.gz
   cd libevent-2.0.21-stable
-  DOWNLOAD "https://sources.debian.org/data/main/libe/libevent/2.0.21-stable-3/debian/patches/0001-evdns-fix-searching-empty-hostnames.patch"
-  DOWNLOAD "https://sources.debian.org/data/main/libe/libevent/2.0.21-stable-3/debian/patches/0002-test-dns-regression-for-empty-hostname.patch"
-  DOWNLOAD "https://sources.debian.org/data/main/libe/libevent/2.0.21-stable-3/debian/patches/0003-evdns-name_parse-fix-remote-stack-overread.patch"
-  DOWNLOAD "https://sources.debian.org/data/main/libe/libevent/2.0.21-stable-3/debian/patches/0004-evutil_parse_sockaddr_port-fix-buffer-overflow.patch"
-  DOWNLOAD "https://sources.debian.org/data/main/libe/libevent/2.0.21-stable-3/debian/patches/20d6d445.patch"
-  DOWNLOAD "https://sources.debian.org/data/main/libe/libevent/2.0.21-stable-3/debian/patches/build_with_no_undefined.patch"
-  DOWNLOAD "https://sources.debian.org/data/main/libe/libevent/2.0.21-stable-3/debian/patches/dh-autoreconf"
-  DOWNLOAD "https://sources.debian.org/data/main/libe/libevent/2.0.21-stable-3/debian/patches/openssl_1.1.patch"
+  DOWNLOAD "https://sources.debian.org/data/main/libe/libevent/2.0.21-stable-3/debian/patches/0001-evdns-fix-searching-empty-hostnames.patch" "0001-evdns-fix-searching-empty-hostnames.patch"
+  DOWNLOAD "https://sources.debian.org/data/main/libe/libevent/2.0.21-stable-3/debian/patches/0002-test-dns-regression-for-empty-hostname.patch" "0002-test-dns-regression-for-empty-hostname.patch"
+  DOWNLOAD "https://sources.debian.org/data/main/libe/libevent/2.0.21-stable-3/debian/patches/0003-evdns-name_parse-fix-remote-stack-overread.patch" "0003-evdns-name_parse-fix-remote-stack-overread.patch"
+  DOWNLOAD "https://sources.debian.org/data/main/libe/libevent/2.0.21-stable-3/debian/patches/0004-evutil_parse_sockaddr_port-fix-buffer-overflow.patch" "0004-evutil_parse_sockaddr_port-fix-buffer-overflow.patch"
+  DOWNLOAD "https://sources.debian.org/data/main/libe/libevent/2.0.21-stable-3/debian/patches/20d6d445.patch" "20d6d445.patch"
+  DOWNLOAD "https://sources.debian.org/data/main/libe/libevent/2.0.21-stable-3/debian/patches/build_with_no_undefined.patch" "build_with_no_undefined.patch"
+  DOWNLOAD "https://sources.debian.org/data/main/libe/libevent/2.0.21-stable-3/debian/patches/dh-autoreconf" "dh-autoreconf"
+  DOWNLOAD "https://sources.debian.org/data/main/libe/libevent/2.0.21-stable-3/debian/patches/openssl_1.1.patch" "openssl_1.1.patch"
   patch -p1 < 0001-evdns-fix-searching-empty-hostnames.patch
   patch -p1 < 0002-test-dns-regression-for-empty-hostname.patch
   patch -p1 < 0003-evdns-name_parse-fix-remote-stack-overread.patch
